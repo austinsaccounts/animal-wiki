@@ -30,21 +30,18 @@ $(document).ready(function(){
   if ( animal==="dolphin")
   {
    $('#dolphin').show();
-  }
+ }
  if ( animal==="honeybadger")
  {
    $('#honeybadger').show();
 }
 if ( animal==="jellyfish")
   {
-     $('#jellyfish').show();
+   $('#jellyfish').show();
   }
 if ( animal==="octopus")
-  {
-     $('#octopus').show();
+{
+  $('#octopus').show();
   }
-});
-
-
-
+})
 });

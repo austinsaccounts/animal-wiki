@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <link rel="stylesheet" href="css/styles.css" text="text/css>">
-    <title>Animal-Wiki</title>
-  </head>
-  <body>
-    <div class="container main">
-
-
-
-      <h1 class="jumbotron">Which animal would you like to learn about?</h1>
-        <form id="animalSelection">
-          <div class="form-group">
-            <div class="radio">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <link rel="stylesheet" href="css/styles.css" text="text/css>">
+  <title>Animal-Wiki</title>
+</head>
+<body>
+  <div class="container main">
+    <h1 class="jumbotron">Which animal would you like to learn about?</h1>
+    <form id="animalSelection">
+      <div class="form-group">
+        <div class="radio">
           <label><input type="radio" name="optradio" value="dolphin"><span class=" choices"> Dolphins</span></label>
         </div>
         <div class="radio">
@@ -28,41 +25,55 @@
         <div class="radio">
           <label><input type="radio" name="optradio" value="octopus"><span class=" choices"> Octopus</span></label>
         </div>
+      </div>
+      <button type="submit" class="btn btn-primary">submit</button>
+    </form>
+      <div class="grid-container">
+      <div class="row">
+        <div class="col col-md-3 dolphin animal">
+          <h2>Dolphins!</h2>
+          <img id="dolphin" src="images/dolphin.jpg" alt="dolphins" class="big-pictures dolphin">
+          <h3><strong>Flipper'in You Off!</strong></h3>
+          <ul>
+            <li> Aquatic Based </li>
+            <li>Singer of the Sea <em>echolocation yo</em></li>
+            <li> Rubbery </li>
+          </ul>
         </div>
-          <button type="submit" class="btn btn-primary">submit</button>
-        </form>
-
-<div class="grid-container">
-<div class="row">
-  <div class="col col-md-3">
-      <h2>Dolphins!</h2>
-    <img id="dolphin" src="images/dolphin.jpg" alt="dolphins" class="big-pictures dolphin">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-
-    </div>
-    <div class="col col-md-3">
-      <h2>Honeybadgers!</h2>
-    <img id="honeybadger" src="images/honeybadger.jpg" alt="honeybager" class="big-pictures honeybadger">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div>
-        <div class="col col-md-3">
-      <h2>Jellyfish!</h2>
-    <img id="jellyfish" src="images/jellyfish.jpg" alt="Jellyfish" class="big-pictures">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div>
-    <div class="col col-md-3">
-      <h2>Octopus</h2>
-<img id="octopus" src="https://i.ytimg.com/vi/yN5u46knJl8/maxresdefault.jpg" alt="Octopus" class="big-pictures">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <div class="col col-md-3 honeybadger">
+          <h2>Honeybadger</h2>
+          <img id="honeybadger" src="images/honeybadger.jpg" alt="honeybager" class="big-pictures honeybadger">
+          <h3><em>The Honey badger don't give a Shit!</em></h3>
+          <ul>
+            <li> Land Based </li>
+            <li> Mean </li>
+            <li> Disgusting! </li>
+          </ul>
+        </div>
+        <div class="col col-md-3 jellyfish">
+          <h2>Jellyfish</h2>
+          <img id="jellyfish" src="images/jellyfish.jpg" alt="Jellyfish" class="big-pictures">
+          <h3>Moves like a jellyfish, stings like a Bee</h3>
+          <ul>
+            <li> Aquatic Based </li>
+            <li> Poisonous </li>
+            <li> Beautiful! <em>until he stings yo ass! </em> </li>
+          </ul>
+        </div>
+        <div class="col col-md-3 octopus">
+          <h2>Octopus ('blue ring')</h2>
+          <img id="octopus" src="https://cdn.newsapi.com.au/image/v1/1347a417a7ccfd31bae4e1e2b6222c31?width=1024" alt="Octopus" class="big-pictures">
+          <h3>Tentacley speaking, he has reach!</h3>
+          <ul>
+            <li> Aquatic Based </li>
+            <li> Tentacles and Poison </li>
+            <li> Beautiful Camoflauge! </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-</div>
-  </body>
+</body>
 </html>
 
 <!-- octopus -->
