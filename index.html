@@ -9,45 +9,59 @@
     <title>Animal-Wiki</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container main">
 
 
 
-      <h1 class="jumbotron">Which animal would you like to learn about</h1>
-        <form>
+      <h1 class="jumbotron">Which animal would you like to learn about?</h1>
+        <form id="animalSelection">
           <div class="form-group">
             <div class="radio">
-          <label><input type="radio" name="optradio" checked>Dolphins</label>
+          <label><input type="radio" name="optradio" value="dolphin"><span class=" choices"> Dolphins</span></label>
         </div>
         <div class="radio">
-          <label><input type="radio" name="optradio">Honeybadgers</label>
+          <label><input type="radio" name="optradio" value="honeybadger"><span class=" choices"> Honeybadgers</span></label>
         </div>
         <div class="radio">
-          <label><input type="radio" name="optradio">Jellyfish</label>
+          <label><input type="radio" name="optradio" value="jellyfish"><span class=" choices"> Jellyfish</span></label>
         </div>
         <div class="radio">
-          <label><input type="radio" name="optradio">Octopus</label>
+          <label><input type="radio" name="optradio" value="octopus"><span class=" choices"> Octopus</span></label>
         </div>
         </div>
           <button type="submit" class="btn btn-primary">submit</button>
         </form>
 
+<div class="grid-container">
+<div class="row">
+  <div class="col col-md-3">
       <h2>Dolphins!</h2>
-    <img src="images/dolphins.jpg" alt="dolphins" class="big-pictures">
+    <img id="dolphin" src="images/dolphin.jpg" alt="dolphins" class="big-pictures dolphin">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
-      <h2>Honeybadgers!</h2>
-    <img src="images/honeybadger.jpg" alt="honeybager" class="big-pictures">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <h2>Jellyfish!</h2>
-    <img src="images/jellyfish.jpg" alt="Jellyfish" class="big-pictures">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <img src="https://i.ytimg.com/vi/yN5u46knJl8/maxresdefault.jpg" alt="Octopus" class="big-pictures">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+
     </div>
+    <div class="col col-md-3">
+      <h2>Honeybadgers!</h2>
+    <img id="honeybadger" src="images/honeybadger.jpg" alt="honeybager" class="big-pictures honeybadger">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+        <div class="col col-md-3">
+      <h2>Jellyfish!</h2>
+    <img id="jellyfish" src="images/jellyfish.jpg" alt="Jellyfish" class="big-pictures">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+    <div class="col col-md-3">
+      <h2>Octopus</h2>
+<img id="octopus" src="https://i.ytimg.com/vi/yN5u46knJl8/maxresdefault.jpg" alt="Octopus" class="big-pictures">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
   </body>
 </html>
 
